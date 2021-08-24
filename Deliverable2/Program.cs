@@ -23,6 +23,8 @@ namespace Deliverable2
                 // response to 'hello'
                 if (input.ToLower() == "hello")
                 {
+                    supCount = 0;
+                    helloThereCount = 0;
                     helloCount++;
                     message = "Hi, good to see you." + Environment.NewLine;
                     if (helloCount > 1)
@@ -39,6 +41,8 @@ namespace Deliverable2
                 // response to 'sup'
                 else if (input.ToLower() == "sup")
                 {
+                    helloCount = 0;
+                    helloThereCount = 0;
                     supCount++;
                     message = "I am good." + Environment.NewLine;
                     if (supCount > 1)
@@ -49,6 +53,8 @@ namespace Deliverable2
                 // response to 'hello there'
                 else if (input.ToLower() == "hello there")
                 {
+                    helloCount = 0;
+                    supCount = 0;
                     helloThereCount++;
                     message = "General Kenobi" + Environment.NewLine;
                     if (helloThereCount > 1)
